@@ -16,7 +16,20 @@ body {
 /* navbar----------------------------------------------------------- */
 
 nav {
-    z-index: 2;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(6, 31, 59, 0.822);
+}
+
+@media(min-width: 992px) {
+    nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(6, 31, 59, 0.822) !important;
+    }
 }
 
 .nav-logo {
@@ -84,9 +97,10 @@ navbar-toggler collapsed {
 
 .header-wrapper {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.692)), url("./images/bg1.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.692)), url("./images/bg1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 90vh;
 }
 
@@ -146,10 +160,18 @@ navbar-toggler collapsed {
 }
 
 #tsparticles {
-    position: absolute;
-    height: 100vh;
+    /* position: absolute;
+    height: 100%;
     width: 98vw;
-    z-index: 1
+    z-index: 1;
+    overflow: hidden; */
+}
+
+.particles-canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .btn-main-offer:hover {

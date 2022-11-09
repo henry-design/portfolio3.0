@@ -1,11 +1,13 @@
 import React from 'react'
 
 import Typewriter from 'typewriter-effect';
+import Particle from "../components/configs/Particle"
 const Header = () =>{
     
 
     return (
      <div className="header-wrapper">
+         <Particle />
         <div className="main-info">
             <h1>
                 Going the extra mile for your business...
