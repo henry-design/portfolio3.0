@@ -15,7 +15,7 @@ const Header = () =>{
             </h1>
            
            <Typer/>
-            <a href="/" className="btn-main-offer">Cotact me</a>
+            <a href="/" className="btn-main-offer">Contact me</a>
         </div>
      </div>
     )
