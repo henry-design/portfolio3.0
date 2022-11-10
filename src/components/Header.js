@@ -17,7 +17,7 @@ const Header = () =>{
     strings: ["Web Applications Development","Software Development, and Intergrations","Data analytics","Systems Administration"],
     autoStart: true,
     loop: true,
-    delay: 50,
+    delay: 70,
     deleteSpeed: 20,
     pauseFor: 1000,
   }}
@@ -33,7 +33,7 @@ const Header = () =>{
                     loop 
                    
             /> */}
-            <a href="#" className="btn-main-offer">Cotact me</a>
+            <a href="/" className="btn-main-offer">Cotact me</a>
         </div>
      </div>
     )
