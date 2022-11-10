@@ -26,7 +26,7 @@ const particlesCon={
     },
     "detectRetina": true,
     "duration": 0,
-    "fpsLimit": 120,
+    "fpsLimit": 30,
     "interactivity": {
       "detectsOn": "window",
       "events": {
@@ -44,7 +44,7 @@ const particlesCon={
           "enable": false,
           "mode": "",
           "parallax": {
-            "enable": true,
+            "enable": false,
             "force": 9,
             "smooth": 10
           }
