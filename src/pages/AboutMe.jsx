@@ -19,7 +19,7 @@ function AboutMe() {
         <Card.Text>
           BSC Applied Physics and Computer Science
         </Card.Text>
-        <Button  className="btn-main-offer" id = "certificate" >View Certificate</Button>
+        <Button id = "certificate" >View Certificate</Button>
       </Card.Body>
     </Card>
     <div className="aboutme">
@@ -81,7 +81,7 @@ function AboutMe() {
             success within a career progressive path.{' '}
           </p>
           <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+            A little about me <cite title="Source Title">H.M.M</cite>
           </footer>
         </blockquote>
         
