@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 :root {
-    --primary-white: #fff;
-    --primary-orange: #f9ab00;
-    --primary-dark: rgba(255, 255, 255, 0);
-    --primary-red: #ef4035;
-    --primary-hover-red: #f33501
+    --primary-white: #ffffff;
+    --primary-orange: #fcba04ff;
+    --primary-red: #ff4444;
+    --primary-hover-red: rgb(85, 62, 21);
+    --primary-dark: #03071eff;
+    --hover-lavender: rgb(187, 136, 145);
+    --secondary-blue: #90fcf9ff;
+    --selective-yellow: #fcba04ff;
+    --comp-color: rgba(7, 61, 59, 1);
 }
 
 body {
     transition: 0.2s ease-in-out;
     font-family: "Roboto condensed";
+}
+
+.App {
+    /* background-color: #8cee8b;
+    opacity: 0.9;
+    background-image: radial-gradient(circle at center center, #050508, #8cee8b), repeating-radial-gradient(circle at center center, #050508, #050508, 34px, transparent 68px, transparent 34px);
+    background-blend-mode: multiply; */
+    /* background-color: var(--primary-dark); */
+    /* background-image: linear-gradient(180deg, var(--primary-dark) 0%, #4a4b69 50%, #000000 100%); */
 }
 
 
@@ -19,17 +32,13 @@ nav {
     z-index: 4;
     padding: 0;
     margin: 0;
-    background-color: rgba(6, 31, 59, 0.822);
-}
-
-@media(min-width: 992px) {
-    nav {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(6, 31, 59, 0.822) !important;
-    }
+    background-color: var(--comp-color) !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 1.5rem 0 rgba(10, 10, 10, 0.945);
+    /* background-color: rgba(6, 31, 59, 0.822) !important; */
 }
 
 .nav-logo {
@@ -45,18 +54,35 @@ nav a.nav-link {
     font-size: .8rem;
     letter-spacing: 0.0375rem;
     cursor: pointer;
+    color: var(--primary-white) !important;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
 }
 
 nav ul li {
     text-transform: uppercase;
 }
 
-.navbar-nav>li>a {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+.navbar-nav>li {
+    /* margin-right: 0.75rem;
+    margin-left: 0.75rem; */
     color: var(--primary-white)!important;
-    border-top: 0.1875px solid var(--primary-dark);
+    border-top: 0.1875rem solid var(--comp-color);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    transition: 0.5s ease-in-out;
 }
+
+
+/* .navbar-nav>::after,
+.navbar-nav>::before {
+    content: " ";
+    display: block;
+    width: 15px;
+    
+    border-top: 0.1875rem solid var(--primary-orange);
+    transition: width .3s;
+} */
 
 .navbar-brand {
     max-width: 10rem;
@@ -79,11 +105,12 @@ nav ul li {
 
 .navbar-nav>li>a.active,
 .navbar-nav>li>a.active:focus {
-    border-top: 0.1875px solid var(--primary-orange);
+    border-top: 0.1875rem solid var(--primary-orange);
+    color: var(--primary-orange) !important;
 }
 
-.navbar-nav>li>a:hover {
-    border-top: 0.1875px solid var(--primary-orange);
+.navbar-nav>li:hover {
+    border-top: 0.1875rem solid var(--primary-orange);
 }
 
 .navbar-toggler>svg,
@@ -97,11 +124,11 @@ navbar-toggler collapsed {
 
 .header-wrapper {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.692)), url("./images/bg1.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.692)), url("./images/bg1-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 90vh;
+    height: 100vh;
+    box-shadow: 0 0 2rem 0 rgba(10, 10, 10, 0.945);
 }
 
 .main-info {
@@ -150,13 +177,15 @@ navbar-toggler collapsed {
 /* btn-main-offer------ */
 
 .btn-main-offer {
-    border: 1px solid var(--primary-red);
+    border: 2px solid var(--primary-hover-red);
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 2rem;
     padding: 0.5rem 0.75rem;
     color: var(--primary-white);
     margin-top: 2rem;
     text-decoration: none !important;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(5, 5, 5, 0.904);
 }
 
 #tsparticles {
@@ -177,6 +206,7 @@ navbar-toggler collapsed {
 .btn-main-offer:hover {
     background-color: var(--primary-hover-red);
     transition: 0.2s ease-in-out;
+    color: var(--primary-white);
 }
 
 @media(max-width:768px) {

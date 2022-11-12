@@ -1,10 +1,13 @@
 import React from 'react'
-
+import {useEffect} from 'react';
 
 import Particle from "../components/configs/Particle"
 import { Typer } from './Typer'
 const Header = () =>{
     
+    useEffect(() => {
+        console.log("Header.js loaded");
+        }, []);
 
     return (
      <div className="header-wrapper">
